@@ -1,0 +1,115 @@
+doctype html
+html(lang="en")
+  head
+      meta(charset="UTF-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous")
+      link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css")
+
+      title #{title}
+  body 
+    include ../includes/header.pug
+    hr
+    .container
+    .row
+      .col-md-6
+        h2.class-about About Riverwood Migration
+        div.image-container
+          img.image(
+            src="https://s3-alpha-sig.figma.com/img/b857/e560/14f5cb9a0e159aee97aa5069a615b7e1?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PN5mUXHfKw~OrGM0sJsZFqc~I31rDTFac4n5gClv0VuqkvZpmPEut-0QGpjlJuMtSHL6zyO80iQgBj9PnfZIU-amCkiqH23wDMx26ghnK3Ui1XYblJLbLofyVK2iMFXAHmZLrlerkbPFQ8SRMHL4tMla72OR1~2TAvCtkWuofxSdZJaQa60Jv9~T4747DeQo23kmQYWCnOh5~6L8C41EwoRITM8~IbwS5MQf5Fwa1phVJ~GBya-oanwuOlfyj8vjtyFO-cbABx-rAE-eX6R3e9fZY2QjlO~d~hx8MDJVaf0K1KedWXxQLUdyhF2Akx6bTWI02vp7bHyYHvrr9ofCPQ__"
+            alt="Фото")
+
+    .custom-container
+      .container.py-5.d-flex.align-items-center.justify-content-center
+        .row
+          .col-md-6.text-center
+            p
+              strong
+                | We are a specialist Australian law firm with experienced
+                | lawyers and registered migration agents handling highly
+                | complex skilled migration matters for both corporate employers
+                | and skilled individuals.
+            p
+              | As a law firm providing Australian immigration services to Hong Kong, Riverwood Migration is highly familiar with the regulations
+              | and requirements for individual and large-scale corporate migration projects in Australia. We offer professional advice on
+              | Australian immigration and nationality laws to families, corporate clients, and individuals, including investors and entrepreneurs.
+              | From visa applications and extensions to settlement, naturalization, and passports, Riverwood Migration can assist you in...
+              | successfully completing the entire immigration process.
+            button.contact-us-btn.btn.btn-primary
+              i.bi.bi-forward-fill
+              |  Contact Us
+.container
+  .row
+    .col-md-3
+      nav
+        h4 Quick navigation through article:
+        ul.nav.flex-column
+          li.nav-item
+            a.nav-link(href="#about") About the company
+          li.nav-item
+            a.nav-link(href="#services") Services
+          li.nav-item
+            i.bi.bi-arrow-right-circle.violet-icon.violet-text
+                | Wall of Approval
+    .col-md-9
+      #about
+        h2 About the company
+        p We are a specialised Australian law firm with experienced lawyers and years of experience handling complex skilled migration matters for both individuals and organisations.
+        p We provide strategic advice on Australian immigration law to highly skilled workers and corporate clients. Each matter is handled by a highly specialised migration team including experienced lawyers and registered migration agents.
+        .alert.alert-secondary
+          .note-header
+                span Note
+                  p
+                    | Our migration lawyers are admitted to practise in a State or Territory in Australia and are qualified to provide
+                    | immigration legal assistance and advice under the Australian Migration Act 1958 (Cth).
+      #services
+        h2 Services
+        ul
+                li
+                  i.bi.bi-arrow-right-circle.violet-icon
+                  | General Skilled Migration
+                li
+                  i.bi.bi-arrow-right-circle.violet-icon
+                  | Global Talent Independent Program
+                li
+                  i.bi.bi-arrow-right-circle.violet-icon
+                  | Employer Sponsored Visas
+                li
+                  i.bi.bi-arrow-right-circle.violet-icon
+                  | Business Sponsorship Application
+                li
+                  i.bi.bi-arrow-right-circle.violet-icon
+                  | Business Innovation & Investment
+
+
+.container-susu
+      .background(style="background-image: url('https://s3-alpha-sig.figma.com/img/2b62/9e34/01362b85727d4d35dbd5f648880832c8?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A2ZBg6DfpYD42ZBDVV7eOGiIc29eM4f7U9B~0txyHt~gJjhudogdl-ekbHpdg3fCjSvyQErizCcsgTSDXub4GLgini0GK7BlSETgRyY5kKLv~72oDrKfu3yUVKCutahjrRyLQ9mwhkoJZDZ68U~VuArAiAkGpiCEs3PdXuHGb3hxYaUqYFttXtuPxfUuZSAuOKb2444ByuEj3Tq0iFQPSl~3sbS6V5wwlI1isv9rsed2p1O1Uacp~B9Pej6~QIBIp32eQfklZuLTO7DiFSv-3RjD8oYdNbibbetbE~fZDT4P2KAMXh~qSVhfzLVkvQG6fSuoNTLAsNtTojI~qoNkjg__'); background-size: cover; background-position: center;")
+        .content
+          .left
+            p Become a client
+            h1 Let's talk about
+            h1 your immigration to Australia
+            p Give us a call:
+            a(href="https://wa.me/1234567890" class="whatsapp-button")
+              i(class="bi bi-whatsapp")
+              |  WhatsApp
+            p info@riverwoodmigration.com
+
+          .right
+            p By submitting, you consent to Riverwood Migration processing your information in accordance with our Privacy Policy
+
+
+
+.container_gugu
+  .col-md-4
+    h2 Subscribe to our Newsletter
+    form
+      .input-group
+        input.form-control(type="email" placeholder="Enter your email here")
+        button.btn.btn-subscribe(type="submit") Subscribe
+
+block content
+include ../includes/footer.pug
+
+script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous")
+script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous")
