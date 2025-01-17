@@ -1,7 +1,7 @@
 body {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  font-family: Arial, sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .nav {
@@ -29,7 +29,7 @@ body {
   height: 597px;
   width: 100%;
   padding: 20px;
-
+  
 }
 
 
@@ -65,6 +65,7 @@ body {
 p {
   font-size: 14px;
   color: #333;
+  
 }
 
 .violet-icon {
@@ -196,14 +197,17 @@ p {
 }
 
 .image-container {
-  width: 1920px;
-  height: 460px;
+  height: 400px;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  width: 1520px; /* Займає всю ширину контейнера */
+  box-sizing: border-box; /* Враховує padding і border в ширині */
+  margin: 0; /* Забирає відступи, якщо потрібна повна ширина */
 }
+
 
 .image {
   width: 100%;
@@ -259,11 +263,16 @@ p {
   font-size: 14px;
   font-style: italic;
 }
+ul {
+  list-style: none;
+  padding: 0; 
+}
 
 #services ul.list-unstyled {
   padding: 0;
   margin-top: 10px;
   margin-bottom: 157px;
+  list-style: none; 
 }
 
 #services ul.list-unstyled li {
@@ -325,9 +334,10 @@ p {
 .container-susu .content {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   color: white;
   z-index: 1;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .container-susu .content .left {
@@ -350,6 +360,8 @@ p {
 .container-susu .content .left h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  font-size: 2.5rem;
+
 }
 
 .container-susu .content .left p {
@@ -360,6 +372,8 @@ p {
 
 .container-susu .content .right p {
   font-size: 1rem;
+  color: white;
+
 }
 
 .container-susu .content .right a {
@@ -401,7 +415,7 @@ p {
   padding-left: 0;
 }
 
-.footer-container h3 {
+.footer-container h3 ,h2{
   margin-bottom: 10px;
   font-size: 1.2rem;
   border-bottom: 1px solid #ffffff;
@@ -421,7 +435,7 @@ p {
 
 .footer-container p, .footer-container a {
   font-size: 14px;
-  color: #FFFFFF;
+  color: #FFFFFF; 
   margin-bottom: 10px;
   line-height: 1.6;
 }
@@ -450,4 +464,43 @@ p {
   font-size: 12px;
   text-align: center;
   color: #FFFFFF;
+  
+}
+
+
+@media (max-width: 768px) {
+  .container-susu {
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left, .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: 1rem; /* Зменшення розміру тексту для заголовків */
+  }
+
+  .left p,
+  .right p {
+    font-size: 1rem;
+  }
+
+  .background {
+    height: 350px; /* Зменшення висоти фону на мобільних */
+  }
+
+  .whatsapp-button {
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+  }
 }

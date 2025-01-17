@@ -4,14 +4,15 @@
   "description": "My webpack project",
   "type": "module",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production --node-env=production",
-    "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
-    "watch": "webpack --watch",
-    "serve": "webpack serve",
-    "dev": "webpack serve --mode=development"
+ "scripts": {
+  "start": "webpack serve --mode=development",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build": "webpack --mode=production --node-env=production",
+  "build:dev": "webpack --mode=development",
+  "build:prod": "webpack --mode=production --node-env=production",
+  "watch": "webpack --watch",
+  "serve": "webpack serve",
+  "dev": "webpack serve --mode=development"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "@webpack-cli/generators": "^3.0.7",
     "autoprefixer": "^10.4.20",
     "babel-loader": "^9.2.1",
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
     "fast-glob": "^3.3.2",
     "html-webpack-plugin": "^5.6.3",
@@ -43,7 +45,7 @@
     "sass": "^1.81.0",
     "sass-loader": "^16.0.3",
     "style-loader": "^4.0.0",
-    "webpack": "^5.96.1",
+    "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0",
     "workbox-webpack-plugin": "^7.3.0"

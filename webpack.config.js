@@ -5,7 +5,6 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { GenerateSW } from 'workbox-webpack-plugin';
 import fastGlob from 'fast-glob';
 import process from 'node:process';
-
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const isProduction = process.env.NODE_ENV === 'production';
 
